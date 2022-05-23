@@ -25,7 +25,7 @@
 
 	async function getCancerdeaths(){
 		console.log("fetching cancerdeaths ....");
-		const res= await fetch("/api/v1/cancerdeaths-stats/" +params.country+"/"+params.year);
+		const res= await fetch("https://sos2122-24.herokuapp.com/api/v2/cancerdeaths-stats/" +params.country+"/"+params.year);
 		if(res.ok){
 			const data= await res.json();
 			cancerdeaths=data;
@@ -42,7 +42,7 @@
 
     async function EditCancerdeaths(){
         console.log("Updating Cancerdeaths...."+updatedCountry);
-        const res = await fetch("/api/v1/cancerdeaths-stats/"+params.country+"/"+params.year,
+        const res = await fetch("https://sos2122-24.herokuapp.com/api/v2/cancerdeaths-stats/"+params.country+"/"+params.year,
 			{
 				method: "PUT",
 				body: JSON.stringify({

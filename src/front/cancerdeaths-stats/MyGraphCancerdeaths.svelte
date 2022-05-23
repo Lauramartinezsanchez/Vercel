@@ -15,13 +15,13 @@
 
     async function getData(){
         console.log("Fetching cancerdeaths....");
-        const res = await fetch("/api/v1/cancerdeaths-stats");
+        const res = await fetch("https://sos2122-24.herokuapp.com/api/v2/cancerdeaths-stats");
         if(res.ok){
             const data = await res.json();          
             datos = data;
             //si no tenemos ningun dato cargado, cargamos los datos iniciales, si tiene datos los obtiene sin cargar los iniciales
             if (datos.length == 0) {
-                const res = await fetch("/api/v1/cancerdeaths-stats/loadInitialData");
+                const res = await fetch("https://sos2122-24.herokuapp.com/api/v2/cancerdeaths-stats/loadInitialData");
                 console.log("Entradas recibidas: "+datos.length);
             //con la siguiente funcion ordeno los datos por años de menor a mayor
             datosOrdenados = datos.sort(function (a, b){
