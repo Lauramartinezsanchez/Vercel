@@ -203,9 +203,9 @@
 			<Dropdown >
 				<DropdownToggle nav caret> API </DropdownToggle>
 				<DropdownMenu end>
-				  <DropdownItem href="./api/v1/cancerdeaths-stats">Cancerdeaths-Stats</DropdownItem>
+				  <DropdownItem href="https://sos2122-24.herokuapp.com/api/v1/cancerdeaths-stats">Cancerdeaths-Stats</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="./api/v2/cancerdeaths-stats">Cancerdeaths-Stats-V2</DropdownItem>
+				  <DropdownItem href="https://sos2122-24.herokuapp.com/api/v2/cancerdeaths-stats">Cancerdeaths-Stats-V2</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/pneumonia-stats">Pneumonia-Stats</DropdownItem>
 				  <DropdownItem divider/>

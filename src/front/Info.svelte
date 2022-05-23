@@ -10,9 +10,9 @@
 			<Dropdown >
 				<DropdownToggle nav caret> API </DropdownToggle>
 				<DropdownMenu end>
-				  <DropdownItem href="./api/v1/cancerdeaths-stats">Cancerdeaths-Stats</DropdownItem>
+				  <DropdownItem href="https://sos2122-24.herokuapp.com/api/v1/cancerdeaths-stats">Cancerdeaths-Stats</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="./api/v2/cancerdeaths-stats">Cancerdeaths-Stats-V2</DropdownItem>
+				  <DropdownItem href="https://sos2122-24.herokuapp.com/api/v2/cancerdeaths-stats">Cancerdeaths-Stats-V2</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats">Pneumonia-Stats-v2</DropdownItem>
 				  <DropdownItem divider/>
@@ -75,8 +75,8 @@
     <p>- <a href="https://sos2122-24.herokuapp.com/api/v1/air-pollution-stats/docs">https://sos2122-24.herokuapp.com/api/v1/air-pollution-stats/docs </a>(developed by <a href="https://github.com/AliciaCamposCastello">Alicia Campos Castelló</a>)</p>
     <br>
 	<h3>APIS:</h3>
-	<p>- <a href="./api/v1/cancerdeaths-stats">https://sos2122-24.herokuapp.com/api/v1/cancerdeaths-stats </a>(developed by <a href="https://github.com/Rgm13">Raúl Gómez Morales</a>)</p>
-	<p>- <a href="./api/v2/cancerdeaths-stats">https://sos2122-24.herokuapp.com/api/v2/cancerdeaths-stats </a>(developed by <a href="https://github.com/Rgm13">Raúl Gómez Morales</a>)</p>
+	<p>- <a href="https://sos2122-24.herokuapp.com/api/v1/cancerdeaths-stats">https://sos2122-24.herokuapp.com/api/v1/cancerdeaths-stats </a>(developed by <a href="https://github.com/Rgm13">Raúl Gómez Morales</a>)</p>
+	<p>- <a href="https://sos2122-24.herokuapp.com/api/v2/cancerdeaths-stats">https://sos2122-24.herokuapp.com/api/v2/cancerdeaths-stats </a>(developed by <a href="https://github.com/Rgm13">Raúl Gómez Morales</a>)</p>
 	<p>- <a href="https://sos2122-24.herokuapp.com/api/v1/pneumonia-stats">https://sos2122-24.herokuapp.com/api/v1/pneumonia-stats </a>(developed by <a href="https://github.com/Lauramartinezsanchez">Laura Martínez Sánchez</a>)</p>
 	<p>- <a href="https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats">https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats </a>(developed by <a href="https://github.com/Lauramartinezsanchez">Laura Martínez Sánchez</a>)</p>
 	<p>- <a href="https://sos2122-24.herokuapp.com/api/v1/air-pollution-stats">https://sos2122-24.herokuapp.com/api/v1/air-pollution-stats </a>(developed by <a href="https://github.com/AliciaCamposCastello">Alicia Campos Castello</a>)</p>
