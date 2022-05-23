@@ -2,7 +2,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/gti-sos/SOS2122-24/badge.svg)](https://snyk.io/test/github/gti-sos/SOS2122-24)
 
 - **Team**
-  - [Raúl Gómezz Morales](https://github.com/Rgm13)
+  - [Raúl Gómez Morales](https://github.com/Rgm13)
   - [Laura Martínez Sánchez](https://github.com/Lauramartinezsanchez)
   - [Alicia Campos Castelló](https://github.com/AliciaCamposCastello)
   - **Project description**:Nuestras fuentes de información esta orientadas a analizar la relación que existe entre la tasa de muertes por neumonia, la tasa de muertes por cancer y la contaminacion del aire en interiores. 
