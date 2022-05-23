@@ -52,7 +52,7 @@
                 ages_seventy.push(dato.ages_seventy);            
             }); 
             }
-            
+            console.log(datosOrdenados);
         }else{
             console.log("Error, can`t charge data");
 		}
