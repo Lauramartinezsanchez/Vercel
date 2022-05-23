@@ -32,7 +32,7 @@
 
 	async function getcancerdeaths(){
 		console.log("fetching cancerdeaths ....");
-		let cadena = `/api/v1/cancerdeaths-stats?offset=+${offset}+&limit=+${limit}`;
+		let cadena = `https://sos2122-24.herokuapp.com/api/v2/cancerdeaths-stats?offset=+${offset}+&limit=+${limit}`;
 		if(from !=null){
             cadena=cadena + `&from=${from}&` 
         }
@@ -65,7 +65,7 @@
 		}
 		//limit=limit+10;
         console.log("fetching cancerdeaths ....");
-		let cadena = `/api/v1/cancerdeaths-stats?offset=+${offset}+&limit=+${limit}`;
+		let cadena = `https://sos2122-24.herokuapp.com/api/v2/cancerdeaths-stats?offset=+${offset}+&limit=+${limit}`;
 		if(from !=null){
             cadena=cadena + `&from=${from}&` 
         }
@@ -89,7 +89,7 @@
 		}
 		//limit=limit+10;
         console.log("fetching cancerdeaths ....");
-		let cadena = `/api/v1/cancerdeaths-stats?offset=+${offset}+&limit=+${limit}`;
+		let cadena = `https://sos2122-24.herokuapp.com/api/v2/cancerdeaths-stats?offset=+${offset}+&limit=+${limit}`;
 		if(from !=null){
             cadena=cadena + `&from=${from}&` 
         }
@@ -115,7 +115,7 @@
          }
 		 else{
         console.log("Inserting cancerdeaths...."+JSON.stringify(newcancerdeaths));
-        const res = await fetch("/api/v1/cancerdeaths-stats",
+        const res = await fetch("https://sos2122-24.herokuapp.com/api/v2/cancerdeaths-stats",
 			{
 				method: "POST",
 				body: JSON.stringify(newcancerdeaths),
@@ -145,7 +145,7 @@
 			}); 
     }}
 	async function Borrarcancerdeaths(name, year) {
-        const res = await fetch("/api/v1/cancerdeaths-stats/"+name+"/"+year, {
+        const res = await fetch("https://sos2122-24.herokuapp.com/api/v2/cancerdeaths-stats/"+name+"/"+year, {
             method: "DELETE"
         }).then(function(res) {
            
@@ -168,7 +168,7 @@
     }
 	async function BorrarcancerdeathsAll(){
         console.log("Deleting cancerdeathss....");
-        const res = await fetch("/api/v1/cancerdeaths-stats/",
+        const res = await fetch("https://sos2122-24.herokuapp.com/api/v2/cancerdeaths-stats",
 			{
 				method: "DELETE"
 			}).then(function (res){
@@ -182,7 +182,7 @@
 
 	async function Loadcancerdeaths(){
         console.log("Loading cancerdeaths....");
-        const res = await fetch("/api/v1/cancerdeaths-stats/loadInitialData",
+        const res = await fetch("https://sos2122-24.herokuapp.com/api/v2/cancerdeaths-stats/loadInitialData",
 			{
 				method: "GET"
 			}).then(function (res){
