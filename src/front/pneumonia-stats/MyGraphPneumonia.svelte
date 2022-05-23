@@ -14,12 +14,12 @@
 
     async function getData(){
         console.log("Fetching pneumonia....");
-        const res = await fetch("/api/v1/pneumonia-stats");
+        const res = await fetch("https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats");
         if(res.ok){
             const data = await res.json();          
             pneumonias = data;
             if (pneumonias.length == 0) {
-                const res = await fetch("/api/v1/pneumonia-stats/loadInitialData");
+                const res = await fetch("https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats/loadInitialData");
                 console.log("Entradas recibidas: "+pneumonias.length);
             //con la siguiente funcion ordeno los datos por años de menor a mayor
             datosOrdenados = pneumonias.sort(function (a, b){
@@ -131,7 +131,7 @@
 				<DropdownMenu end>
 				  <DropdownItem href="./api/v1/cancerdeaths-stats">Cancerdeaths-Stats</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="./api/v1/pneumonia-stats">Pneumonia-Stats</DropdownItem>
+				  <DropdownItem href="https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats">Pneumonia-Stats</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/air-pollution-stats">Airpollution-Stats</DropdownItem>
 				</DropdownMenu>

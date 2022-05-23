@@ -30,7 +30,7 @@
 
 	async function getPneumonia(){
 		console.log("fetching pneumonia ....");
-		let cadena=`/api/v1/pneumonia-stats?offset=+${offset}+&limit=+${limit}`;
+		let cadena=`https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats?offset=+${offset}+&limit=+${limit}`;
 		if(from !=null){
 			cadena=cadena + `&from=${from}&` 
 		}
@@ -58,7 +58,7 @@
 		}
 		//limit=limit+10;
         console.log("fetching pneumonia ....");
-		let cadena = `/api/v1/pneumonia-stats?offset=+${offset}+&limit=+${limit}`;
+		let cadena = `https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats?offset=+${offset}+&limit=+${limit}`;
 		if(from !=null){
             cadena=cadena + `&from=${from}&` 
         }
@@ -79,7 +79,7 @@
 		}
 		//limit=limit+10;
         console.log("fetching pneumonia ....");
-		let cadena = `/api/v1/pneumonia-stats?offset=+${offset}+&limit=+${limit}`;
+		let cadena = `https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats?offset=+${offset}+&limit=+${limit}`;
 		if(from !=null){
             cadena=cadena + `&from=${from}&` 
         }
@@ -101,7 +101,7 @@
 			visible="true";
          }else{
         console.log("Inserting Pneumonia...."+JSON.stringify(newPneumonia));
-        const res = await fetch("/api/v1/pneumonia-stats",
+        const res = await fetch("https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats",
 			{
 				method: "POST",
 				body: JSON.stringify(newPneumonia),
@@ -135,7 +135,7 @@
     }}
 	async function BorrarPneumonia(name,year){
         console.log("Deleting Pneumonia....");
-        const res = await fetch("/api/v1/pneumonia-stats/" + name +"/" + year,
+        const res = await fetch("https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats" + name +"/" + year,
 			{
 				method: "DELETE"
 			}).then(function (res){
@@ -158,7 +158,7 @@
     }
 	async function BorrarPneumoniasAll(){
         console.log("Deleting pneumonias....");
-        const res = await fetch("/api/v1/pneumonia-stats/",
+        const res = await fetch("https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats",
 			{
 				method: "DELETE"
 			}).then(function (res){
@@ -172,7 +172,7 @@
 
 	async function LoadPneumonia(){
         console.log("Loading pneumonia....");
-        const res = await fetch("/api/v1/pneumonia-stats/loadInitialData",
+        const res = await fetch("https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats/loadInitialData",
 			{
 				method: "GET"
 			}).then(function (res){
@@ -194,7 +194,7 @@
 				<DropdownMenu end>
 				  <DropdownItem href="./api/v1/cancerdeaths-stats">Cancerdeaths-Stats</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="./api/v1/pneumonia-stats">Pneumonia-Stats</DropdownItem>
+				  <DropdownItem href="https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats">Pneumonia-Stats</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/air-pollution-stats">Airpollution-Stats</DropdownItem>
 				</DropdownMenu>

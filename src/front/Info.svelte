@@ -14,7 +14,9 @@
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v2/cancerdeaths-stats">Cancerdeaths-Stats-V2</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="./api/v1/pneumonia-stats">Pneumonia-Stats</DropdownItem>
+				  <DropdownItem href="https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats">Pneumonia-Stats-v2</DropdownItem>
+				  <DropdownItem divider/>
+				  <DropdownItem href="https://sos2122-24.herokuapp.com/api/v1/pneumonia-stats">Pneumonia-Stats</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/air-pollution-stats">Airpollution-Stats</DropdownItem>
 				</DropdownMenu>

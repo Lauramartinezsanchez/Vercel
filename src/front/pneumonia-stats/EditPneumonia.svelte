@@ -26,7 +26,7 @@
 
 	async function getPneumonia(){
 		console.log("fetching pneumonia ....");
-		const res= await fetch("/api/v1/pneumonia-stats/" +params.country +"/"+params.year);
+		const res= await fetch("https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats/" +params.country +"/"+params.year);
 		if(res.ok){
 			const data= await res.json();
 			pneumonia=data;
@@ -43,7 +43,7 @@
 
     async function EditPneumonia(){
         console.log("Updating Pneumonia...."+updatedCountry);
-        const res = await fetch("/api/v1/pneumonia-stats/"+params.country +"/"+params.year,
+        const res = await fetch("https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats/"+params.country +"/"+params.year,
 			{
 				method: "PUT",
 				body: JSON.stringify({
@@ -99,7 +99,7 @@
 				<DropdownMenu end>
 				  <DropdownItem href="./api/v1/cancerdeaths-stats">Cancerdeaths-Stats</DropdownItem>
 				  <DropdownItem divider/>
-				  <DropdownItem href="./api/v1/pneumonia-stats">Pneumonia-Stats</DropdownItem>
+				  <DropdownItem href="https://sos2122-24.herokuapp.com/api/v2/pneumonia-stats">Pneumonia-Stats</DropdownItem>
 				  <DropdownItem divider/>
 				  <DropdownItem href="./api/v1/air-pollution-stats">Airpollution-Stats</DropdownItem>
 				</DropdownMenu>
